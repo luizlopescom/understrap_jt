@@ -1,0 +1,773 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"u",
+				"url()\tbackground-image"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"gr",
+				"gray-600"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"co",
+				"color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sass/theme/_theme.scss",
+			"settings":
+			{
+				"buffer_size": 8608,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/theme/_theme_variables.scss",
+			"settings":
+			{
+				"buffer_size": 3489,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/sass/bootstrap4/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 47781,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 3294,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/theme/_theme_shortcuts.scss",
+			"settings":
+			{
+				"buffer_size": 1066,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/sass/bootstrap4/_navbar.scss",
+			"settings":
+			{
+				"buffer_size": 6415,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "inc/extras.php",
+			"settings":
+			{
+				"buffer_size": 3987,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"sass b",
+				"Build With: Sass (libsass)"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 209.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/css",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/src",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/src/sass"
+	],
+	"file_history":
+	[
+		"/C/Users/luiz/OneDrive/Clientes/Jogo da Transformacao/0.identidade/web/jogodatransformacao-logo-svg.svg",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/extras.php",
+		"/W/public_html/jogodatransformacao/wp-content/uploads/2019/06/jogodatransformacao-logo-white-svg.svg",
+		"/W/public_html/jogodatransformacao/wp-content/uploads/2019/06/jogodatransformacao-logo-svg.svg",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/enqueue.php",
+		"/W/public_html/jogodatransformacao/wp-content/plugins/divi-builder/core/functions.php",
+		"/W/public_html/jogodatransformacao/wp-content/plugins/divi-builder/includes/builder/framework.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/src/sass/bootstrap4/_buttons.scss",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/divi.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/src/sass/bootstrap4/_navbar.scss",
+		"/W/public_html/jogodatransformacao/wp-content/plugins/divi-builder/includes/builder/functions.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/page-templates/empty.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/page-templates/empty-transparentmenu.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/page-templates/fullwidthpage.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/src/sass/bootstrap4/_variables.scss",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/understrap/understrap.scss",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/theme.scss",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/shortcodes.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/footer.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/widgets.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/header.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/src/sass/bootstrap4/_type.scss",
+		"/C/Users/luiz/OneDrive/Clientes/Jogo da Transformacao/0.identidade/jogodatransformacao-logo-white-svg.svg",
+		"/C/Users/luiz/OneDrive/Clientes/Jogo da Transformacao/0.identidade/jogodatransformacao-logo-svg.svg",
+		"/C/Users/luiz/OneDrive/Clientes/Jogo da Transformacao/0.identidade/jogodatransformacao-logo-ai.eps",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/enqueue.php",
+		"/W/public_html/frameworks/wp-content/themes/frameworks/js/scripts.js",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/functions.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/js/theme.js",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/js/scripts.js",
+		"/W/public_html/frameworks/wp-content/themes/frameworks/js/frameworks.js",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/extras.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/security.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/security.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/divi.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/breadcrumb.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content-post-list.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content-single.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/theme/_theme_variables.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/plugin_meta_box.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/custom_post_types_taxonomies.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/inc/customizer_custom.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/theme/_theme.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/theme/_theme.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/footer.php",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/assets/underscores.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/theme/_theme_variables.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/theme/_theme_shortcuts.scss",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/css/theme.css",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/css/theme.bkp.css",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/custom-editor-style.scss",
+		"/W/public_html/jogodatransformacao/wp-content/themes/jogodatransformacao/sass/.libsass.json",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/.libsass.json",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/customizer_custom.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/front-page.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/single.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/archive.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/hooks.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content-single-produto.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/search.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content-search.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/searchform.php",
+		"/W/public_html/fanfoto/wp-content/themes/fanfoto/home.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/header.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/img/fc-selo.svg",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/0.identidade/fc-symbol.svg",
+		"/W/public_html/forrh/wp-content/themes/forrh/home.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/frontpage.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/page.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/theme_custom.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/sidebar-templates/sidebar-right.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/global-templates/right-sidebar-check.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/template-tags.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content - Copia.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/src/sass/bootstrap4/_variables.scss",
+		"/W/public_html/fanfoto/wp-content/themes/fanfoto/loop-templates/post-list.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/setup.php",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/site assets/utils.php",
+		"/W/public_html/forrh/wp-includes/blocks.php",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/site assets/wp-custom-taxonomy-image.php",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/site assets/thickbox.js",
+		"/W/public_html/forrh/wp-content/themes/forrh/functions.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/understrap/understrap.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/widgets.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/sidebar-templates/sidebar-footerfull.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/theme-settings.php",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/site assets/contact_info_meta_box.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/plguni_meta_box.php",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/site assets/footer.php",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/0.identidade/web/logo-forrh-branco.svg",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/customizer.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/inc/shortcodes.php",
+		"/D/Profissional/Branode/globe/year-kgm.php",
+		"/D/Profissional/Branode/globe/customizer.php",
+		"/D/Profissional/Branode/globe/shortcodes.php",
+		"/D/Profissional/Branode/globe/divi.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/src/sass/bootstrap4/_nav.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/page-templates/blank.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/page-templates/empty.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/loop-templates/content-empty.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/src/sass/bootstrap4/_reboot.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/src/sass/bootstrap4/_type.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/theme.scss",
+		"/W/public_html/forrh/wp-content/themes/forrh/src/sass/bootstrap4/_root.scss",
+		"/C/Users/luiz/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/luiz/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/C/Users/luiz/AppData/Roaming/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/luiz/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/README.md",
+		"/W/public_html/forrh/wp-content/themes/forrh/sidebar.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/css/theme.min.css",
+		"/W/public_html/forrh/wp-content/themes/forrh/css/theme.css",
+		"/W/public_html/forrh/wp-content/themes/forrh/author.php",
+		"/W/public_html/forrh/wp-content/themes/forrh/sass/custom-editor-style.scss",
+		"/D/Profissional/Branode/jogodatransformacao/understrap-master/.libsass.json",
+		"/D/Profissional/Branode/jogodatransformacao/understrap-master/sass/assets/bootstrap4.scss",
+		"/D/Profissional/Branode/jogodatransformacao/understrap-master/sass/theme.scss",
+		"/C/Users/luiz/OneDrive/Clientes/Revista Melhor/0.identidade/web/logo-forrh.svg",
+		"/C/Users/luiz/AppData/Roaming/Sublime Text 3/Packages/User/Libsass Build.sublime-settings",
+		"/D/Profissional/Branode/jogodatransformacao/understrap-master/single.php",
+		"/D/Profissional/Branode/jogodatransformacao/understrap-master/css/theme.css"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 128.0,
+		"where_history":
+		[
+			"W:\\public_html\\jogodatransformacao\\wp-content\\themes\\jogodatransformacao\\inc",
+			"W:\\public_html\\jogodatransformacao\\wp-content\\themes\\jogodatransformacao\\src",
+			"W:\\public_html\\jogodatransformacao\\wp-content\\plugins\\divi-builder",
+			"W:\\public_html\\jogodatransformacao\\wp-content\\themes\\jogodatransformacao\\",
+			"W:\\public_html\\jogodatransformacao\\wp-content\\themes\\jogodatransformacao\\src\\sass",
+			"W:\\public_html\\jogodatransformacao\\wp-content\\themes\\jogodatransformacao\\sass",
+			"W:\\public_html\\jogodatransformacao\\wp-content\\themes\\jogodatransformacao\\src\\sass\\bootstrap4",
+			"W:\\public_html\\forrh\\wp-content\\themes\\jogodatransformacao\\src",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\src",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\sass",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\inc",
+			"W:\\public_html\\forrh\\wp-content\\themes\\inc",
+			"W:\\public_html\\forrh\\wp-includes",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\sass",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\sass",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\src",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\sass",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\sass",
+			"W:\\public_html\\forrh\\wp-content\\themes\\forrh\\src\\sass\\bootstrap4"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img-fluid",
+			"$navbar-nav-link",
+			"$navbar-dark-active-color",
+			"$navbar-dark-brand-color",
+			".navbar-dark",
+			"common.js",
+			"wp_enqueue_style",
+			"enqueue",
+			"768",
+			"et-pb-post-main-image",
+			"-image-",
+			"spacing",
+			"the_custom_logo",
+			".nav-link",
+			"border-radius",
+			"btn-border-radius",
+			"button",
+			".nav-link",
+			".navbar-light .navbar-nav .nav-link",
+			"nav-link",
+			".nav-link",
+			" .nav-link",
+			".nav-link",
+			".navbar-expand-md .navbar-nav .nav-link",
+			"btn",
+			"secondary",
+			"btn-secondary",
+			"small",
+			"small, .small",
+			"button",
+			"fill",
+			"searc",
+			"understrap_site_info",
+			"image-wrapper",
+			"    ",
+			"wrapper",
+			"navbarNavDropdown",
+			"outline",
+			"focus",
+			"searc",
+			"post_parent_id",
+			"understrap_entry_footer",
+			"entry-con",
+			"the_permalink",
+			"125",
+			"thum",
+			"understrap_all_excerpts_get_more_link",
+			"post_excerpt",
+			"thumb",
+			"data-spy",
+			" data-spy=\"scroll\" data-target=\"#fornecedor_menu\" data-offset=\"0\" ",
+			"fornecedor_menu",
+			"certificacao",
+			"certificao",
+			".js",
+			"Add Image",
+			"__(",
+			"add_category_image",
+			"hier",
+			"strong",
+			"understrap-read-more-link",
+			"understrap_posted_on",
+			"\t",
+			"  ",
+			"font",
+			"wrapper-footer-full",
+			"logo",
+			"understrap_site_info",
+			"$nav-tabs-link-active-color;",
+			".nav-link",
+			".navbar-light .navbar-nav .nav-link",
+			".nav-link",
+			".navbar-light .navbar-nav .nav-link",
+			"link-color",
+			".nav-link",
+			".navbar-light .navbar-nav .nav-link",
+			" !default",
+			".container",
+			"$font-size-base",
+			"%1$s",
+			"return",
+			"st2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\t",
+			"",
+			"\t",
+			"",
+			"tagline"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sass/theme/_theme.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								622,
+								622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/theme/_theme_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2200,
+								2200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1520.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/sass/bootstrap4/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30015,
+								30015
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13509.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1771,
+								1771
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/theme/_theme_shortcuts.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								748,
+								748
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/sass/bootstrap4/_navbar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5586,
+								5586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "inc/extras.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1515,
+								1515
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Libsass Build/Sass (libsass).sublime-build",
+	"project": "jogodatransformacao.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

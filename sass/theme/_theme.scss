@@ -1,1 +1,588 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.wrapper {
+	padding: 30px 0;
+	//Change padding on HOME
+	&.home {
+		padding-top: 0;
+	}
+	//FIX padding on SINGLE
+	&#single-wrapper {
+		padding-bottom: 0;
+		//Add padding to .container
+		> .container {
+			padding-bottom: 30px
+		}
+	}
+}
+
+
+// Main Header
+
+$main-menu-height: 100px;
+$submenu-height:50px;
+
+//Check if page template is 'transparent menu'
+body.page-template-empty-transparentmenu {
+
+	//Set main menu to transparent and absolute
+	.wrapper-navbar {
+		@extend %bg-gradient-dark-alpha;
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 20;
+
+		.navbar-transparent {
+			border-bottom-color: transparent;
+		}
+
+	}
+
+	//Dont add margin if is menu
+	.et-boc .et_builder_outer_content .et_builder_inner_content > .et_pb_section:first-child > *:not(.et_pb_fullwidth_menu) {
+		//Add 4% - is the divi margin
+		margin-top: calc( #{$main-menu-height} + 4%);
+	}
+	.et-boc .et_builder_outer_content .et_builder_inner_content > .et_pb_fullwidth_section.submenu {
+		//Add 4% - is the divi margin
+		margin-top: $main-menu-height;
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 19;
+	}
+	.et_pb_fullwidth_section.submenu + .et_pb_section {
+		//Add 4% - is the divi margin
+		padding-top: calc( #{$main-menu-height} + #{$submenu-height} + 4% );
+	}
+
+		//submenu remove white background
+		&.et-db #et-boc .et_pb_fullwidth_section .et_pb_fullwidth_menu {
+			border-top: 1px solid rgba($light, .25);
+			border-bottom: 1px solid rgba($light, .25);
+			background-color: transparent;
+			color: $light;
+		}
+
+}
+
+
+
+//Main menu
+.navbar {
+	border-bottom: 1px solid $border-color;
+
+	//Desktop
+	@include media-breakpoint-up(md) {
+		//Set height only on desktop
+		height: $main-menu-height;
+
+		//Set nav menu width to 100%
+		.navbar-nav {
+			width: 100%;
+
+			//vertical align center
+			li.nav-item {
+				align-self:center;
+			}
+		}
+	}
+	
+
+	//Mobile container
+	@include media-breakpoint-down(lg) {
+		.container {
+			max-width: 100%;
+			padding: 0;
+			//background:#0f0;
+		}
+	}
+
+}
+.navbar-light .navbar-nav .nav-item:not(.child-btn) .nav-link {
+	color: $dark;
+	&:hover {
+		color: $dark;
+	}
+}
+//align menu right
+.navbar-expand-lg .navbar-collapse {
+	flex-direction: row;
+    justify-content: flex-end;
+}
+
+// Logo
+.custom-logo-link img {
+	width: 145px;
+	height: auto;
+	@include media-breakpoint-down(md) {
+		max-width: 15vw;
+	}
+}
+
+//TOP HEADER WIDGET
+.top-header-widget {
+	border-bottom: 1px solid $border-color;
+	padding: 0;
+	background: $white;
+	@include media-breakpoint-up(md) {
+		padding: 20px 0 10px;
+	}
+}
+
+//SEARCH INPUT
+.navbar .search-input-wrapper {
+	padding: 0 2rem;
+	@include media-breakpoint-down(md) {
+		padding: 0 1rem;
+		max-width: 60vw;
+	}
+}
+.search-input-wrapper {
+    max-width: 436px;
+    width: 100%;
+    input {
+		@include border-default;
+		@include box-shadow-default;
+		background: $bg-light;
+    }
+    .input-group-append {
+    	position: absolute;
+    	right: 0;
+    	z-index: 3;
+    }
+    button {
+    	border:1px none transparent;
+    	background: transparent;
+    	color: $gray-500;
+    	&:hover {
+    		border:1px none transparent;
+    		background: transparent;
+    		color: $gray-600;
+    	}
+    	&:focus {
+    		border:1px none transparent;
+    		background: transparent;
+    		color: $gray-600;
+    		box-shadow:0 0 0 transparent;
+    	}
+    }
+}
+
+
+//DIVI SUBMENU
+
+.et-boc .et_pb_fullwidth_menu {
+	height: $submenu-height;
+
+	* {height: 100%;}
+
+	.fullwidth-menu-nav ul.fullwidth-menu {
+		
+	}
+	.fullwidth-menu li {
+		font-size: .875rem; //14px
+		padding-right: 2.5rem; //40px
+
+		//Set first-child as title
+		&:first-child {
+			margin-right:auto;
+			font-size: 1rem;//16px
+			font-weight: bold;
+
+			//Remove mouse event if active
+			&.current-menu-item {
+				pointer-events: none;
+			}
+
+		}
+
+		a {
+			display: flex;
+			flex-direction:column;
+			justify-content:center;
+		}
+	}
+	.fullwidth-menu > li:last-child {
+		padding-right: 0;
+	}
+}
+
+body.et-db #et-boc .et_pb_fullwidth_section .et_pb_fullwidth_menu {
+	border-bottom: 1px solid $border-color;
+}
+
+
+//FOOTER
+
+.wrapper-footer,
+.wrapper-footer-bottom,
+.wrapper-footer-credits {
+	a, p, div {		
+		font-size: $font-size-sm;
+	}
+}
+#wrapper-footer-full,
+.wrapper-footer {
+	background: $primary;
+	color:$light;
+}
+
+//margins
+.wrapper-footer-full {
+	padding: 0;
+	@include media-breakpoint-up(md) {
+		padding: 20px 0 10px;
+	}
+	.container {
+		padding: 0;
+		@include media-breakpoint-down(md) {
+			max-width:100%;
+		}
+	}
+}
+
+.wrapper-footer ul,
+.wrapper-footer-bottom ul {
+	@include remove-ul-padding;
+}
+.wrapper-footer li,
+.wrapper-footer-bottom li {
+	@include remove-list-style;
+}
+
+.wrapper-footer {
+	h6 {
+		margin-bottom: 2rem;
+		color: $light;
+		font-size: 1rem;
+		text-transform: none;
+	}
+	li {
+		margin-bottom: .875rem;
+	}
+	a {
+		color:$light;
+	}
+} 
+
+//Footer redes sociais + TOS
+.wrapper-footer-bottom {
+	background: $blue-dark;
+	a {
+		color: $light;
+	}
+	@include media-breakpoint-up(md) {
+		ul {
+			margin-bottom: 0;
+		}
+	}
+	
+	li {
+		display: inline-block;
+	}
+	ul li:not(:last-child) {
+		margin-right: 2em;
+	}
+	.social-links {
+		text-align: right;
+		a {
+			font-size: $font-size-lg;
+		}
+		a:not(:last-child) {
+			margin-right: 1em;
+		}
+		@include media-breakpoint-down(md) {
+			text-align: left;
+			a:first-child {
+				margin-left: 15px;
+			}
+		}
+	}
+}
+
+//Footer Last area - credits
+.wrapper-footer-credits {
+	background:$bg-blue-light;
+	color: $dark;
+	padding: 15px 0;
+	@include media-breakpoint-up(md) {
+		.site-info {
+			text-align: center;
+		}
+	}
+}
+
+
+
+//SIDEBAR - Widgets
+
+.sidebar aside:not(:first-child) {
+	margin-top: 1.875rem;
+}
+
+
+
+// CONTENT
+.card {
+	@include box-shadow-default;
+	@include border-default;
+}
+
+
+
+
+
+
+
+
+
+
+//HOME
+.search-section {
+	//Add margin for next element
+	margin-bottom: 30px;
+	height: 40vh;
+	min-height: 300px;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	background-position: top center;
+	background-color: $primary;
+	background-size: cover;
+	
+	//align center col-md-xx
+	.d-flex {
+		flex-direction:column;
+	}
+	.search-input-wrapper {
+		align-self: center;
+	}
+}
+
+
+
+//FORNECEDOR
+
+.breadcrumb {
+	color: $gray-600;
+	background-color: transparent;
+	*, a, span {
+		font-size: .9375rem;
+	}
+}
+
+.fornecedor-header {
+	@include box-shadow-default;
+	@include border-default;
+
+	@include media-breakpoint-down(sm) {
+		//não é fornecedor de confianca
+		border-top: 6rem solid $gray-500;
+	}
+
+	&.fornecedor-de-confianca {
+		border-top: 4px solid $primary;
+
+		@include media-breakpoint-down(sm) {
+			border-top: 6rem solid $primary;
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 30vw;
+		top: -5rem;
+		margin: 0 auto -4rem;
+		z-index: 4;
+		background: $white;
+
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			position: relative;
+			top: -5rem;
+		}
+	}
+	
+	.selo-fornecedor-de-confianca {
+		position: relative;
+
+		//Mobile
+		@include media-breakpoint-down(sm) {
+			//order:1;
+			top: calc(-5rem - 15px);
+			right: 0;
+			position: absolute;
+			height: 5rem;
+			padding:0;
+
+			.selo-wrapper {
+				display: none;
+			}
+
+		}
+		.selo-wrapper {
+			//Desktop
+			@include media-breakpoint-up(md) {
+				position: absolute;
+				width: 100%;
+				//Position on top + right corner
+				margin-top: calc(-1.25rem );
+				margin-right: calc(-1.25rem + 14px);
+				right: 0;
+
+				img {
+					height: auto;
+					width: auto;
+					float: right;
+					//Add the col-md-xx padding to image
+					padding-left: 30px;
+				}
+			}
+			
+		}
+
+	}
+		
+}
+
+.fornecedor_info {
+	color: $primary;
+	i {
+		margin-right: .5rem;
+		font-size: .875rem;
+	}
+	> *:not(:last-child) {
+		margin-right: 1.25rem;
+	}
+	> * {
+		display: inline-block;
+	}
+}
+.uf {
+	text-transform: uppercase;
+}
+.image-wrapper {
+		@include border-default;
+		@include box-shadow-default;
+	}
+
+
+// MINI MENU - SCROLLSPY
+.fornecedor-menu {
+	@include box-shadow-default;
+	position: sticky;
+	top: 1.875rem;
+}
+
+//Scrollspy
+.list-group {
+	border: 1px solid $border-color;
+	.list-group-item:not(:last-child) {
+		border-bottom: 1px solid $border-color;
+	}
+	.list-group-item:last-child {
+		border-bottom: 0 solid $border-color;
+	}
+	.list-group-item {
+		color: $dark;
+		border-top: 0 solid $border-color;
+		border-right: 0 solid $border-color;	
+		border-left: 0 solid $border-color;
+		transition: .3s all;
+		padding: 0.5rem 1.25rem;
+		margin-bottom: 0px;
+		&.active {
+			background-color: $bg-white;
+	    	border-left: 5px solid $primary;
+	    	padding-left: 1rem;
+	    	color: $dark;
+		}
+	}
+}
+
+.fornecedor_section {
+	> div {
+		@include border-default;
+		@include box-shadow-default;
+	}
+	h2.card-title {
+		margin-bottom: 1.5rem;
+	}
+	.card-body:not(:first-child) {
+		border-top: 1px solid $border-color;
+	}	
+	.certificado {
+		margin-bottom: 1.5rem;
+	}
+	.certificado-title {
+		justify-content: center;
+		flex-direction: column;
+		display: flex;
+	}
+	.fornecedor-produtos > div.produtos:not(:last-of-type),
+	.fornecedor-cases .card-body > div.type-cases:not(:last-of-type),
+	.fornecedor-publicacoes .card-body > div.type-publicacoes:not(:last-of-type) {
+		margin-bottom: .75rem;
+	}
+	.fornecedor-produtos > div.produtos:not(:last-of-type) .description,
+	.fornecedor-cases .card-body > div.type-cases:not(:last-of-type) .description,
+	.fornecedor-publicacoes .card-body > div.type-publicacoes:not(:last-of-type) .description {
+		border-bottom: 1px solid $border-color;
+		padding-bottom: .5rem;
+	}
+	.btn-link {
+		display: inline;
+		padding: 0;
+		vertical-align: initial;
+	}
+}
+
+
+
+
+address {
+	.row {
+		margin-bottom: .5rem;
+	}
+	.redes-sociais i {
+		font-size: 1.25rem;
+		margin-right: .5rem;
+	}
+}
+
+//POSTS inside SINGLE
+.post-list .image-wrapper {
+
+}
+
+
+
+.produto-fonecedor-label,
+.produto-fonecedor-label a {
+}
+
+.produto-fonecedor-label.fc-selo::after {
+	content: '';
+	width: 1rem;
+	height: 1rem;
+	border-radius:1rem;
+	background: url('../img/fc-selo.svg') $primary no-repeat center;
+	background-size: 50%;
+	position: relative;
+	display: inline-block;
+	top: 0.25rem;
+	left: .2rem;
+}
+
+.fornecedores-list-area .fornecedor-de-confianca .image-wrapper::after {
+	content: '';
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius:1rem;
+	background: url('../img/fc-selo.svg') $primary no-repeat center;
+	background-size: 50%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0.25rem;
+	right: .2rem;
+}

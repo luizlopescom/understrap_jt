@@ -1,0 +1,62 @@
+
+// HEADINGs
+
+h1, .h1 {
+	@extend h1, .h1;
+	@include mb-30;
+	font-weight: 400;
+}
+h2, .h2 {
+	@extend h2, .h2;
+	@include mb-30;
+	font-weight: 400;
+}
+h3, .h3 {
+	@extend h3, .h3;
+	font-weight: 400;
+}
+
+	h3 a, .h3 a {
+		color: $primary;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+h4, .h4 {
+	@extend h4, .h4;
+	font-weight: 400;
+}
+h5, .h5 {
+	@extend h5, .h5;
+	font-weight: 700;
+
+	//Above titles
+	&.overline {
+		font-size: $h1-overline-font-size;//21px
+	}
+}
+
+h6, .h6 {
+	@extend h6, .h6;
+	font-weight: 400; //regular
+
+	//Above titles
+	&.overline {
+		font-size: $h2-overline-font-size;//18px
+		color: $gray-600;
+	}
+}
+
+.feat-description,
+h5.description {
+	font-size: $h1-description-font-size;//24px
+	font-weight: normal;
+	line-height: 1.5em;
+}
+.description,
+h6.description {
+	font-size: $h2-description-font-size;//21px
+	line-height: 1.5em;
+}

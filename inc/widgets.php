@@ -96,6 +96,19 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 	 * Initializes themes widgets.
 	 */
 	function understrap_widgets_init() {
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Top Header', 'understrap' ),
+				'id'            => 'top_header',
+				'description'   => __( 'Área exibida acima do menu principal', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="top-header-widget %2$s dynamic-classes d-flex justify-content-center">',
+				'after_widget'  => '</div><!-- .top-header-widget -->',
+				'before_title'  => '<h3 class="top-header-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 		register_sidebar(
 			array(
 				'name'          => __( 'Right Sidebar', 'understrap' ),
@@ -156,17 +169,93 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		//Footer Widgets
+		
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer Full', 'understrap' ),
+				'name'          => __( 'Footer Top', 'understrap' ),
 				'id'            => 'footerfull',
 				'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
-				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes d-flex justify-content-center">',
 				'after_widget'  => '</div><!-- .footer-widget -->',
-				'before_title'  => '<h3 class="widget-title">',
-				'after_title'   => '</h3>',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
 			)
 		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Coluna 1', 'understrap' ),
+				'id'            => 'footer_col1',
+				'description'   => __( 'Primeira coluna do rodapé', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Coluna 2', 'understrap' ),
+				'id'            => 'footer_col2',
+				'description'   => __( 'Segunda coluna do rodapé', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Coluna 3', 'understrap' ),
+				'id'            => 'footer_col3',
+				'description'   => __( 'Terceira coluna do rodapé', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Coluna 4', 'understrap' ),
+				'id'            => 'footer_col4',
+				'description'   => __( 'Quarta coluna do rodapé', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Main Bottom', 'understrap' ),
+				'id'            => 'footer_main_bottom',
+				'description'   => __( 'Área exibida na parte principal do rodapé e abaixo dos menus', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes mt-30 text-md-center">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Bottom', 'understrap' ),
+				'id'            => 'footer_bottom',
+				'description'   => __( 'Área exibida abaixo do footer e ao lados das redes sociais', 'understrap' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h6 class="widget-title">',
+				'after_title'   => '</h6>',
+			)
+		);
+
+		
 
 	}
 } // endif function_exists( 'understrap_widgets_init' ).

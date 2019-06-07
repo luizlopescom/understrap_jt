@@ -1,0 +1,12 @@
+{
+    "output": {
+        "dir": "../css",
+        "structure": "flat"
+    },
+    "compile": {
+        "line-comments": false,
+        "line-numbers":  false,
+        "style":         false,
+        "load-path":     "theme"
+    }
+}

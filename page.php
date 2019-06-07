@@ -31,6 +31,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main" id="main">
 
+				<?php if ( ! is_front_page() ) { //SEO ?>
+					<h1 class="visuallyhidden"><?php echo get_the_title(); ?></h1>
+				<?php } ?>
+
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'loop-templates/content', 'page' ); ?>

@@ -1,0 +1,11 @@
+@function get-container-width($key: 'xl') {
+    @return map-get($container-max-widths, $key);
+}
+
+
+.et_pb_row {
+	//width: 80%;
+	max-width: get-container-width('xl');
+	margin: auto;
+	position: relative;
+}

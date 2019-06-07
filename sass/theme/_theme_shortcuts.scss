@@ -1,0 +1,96 @@
+// Shortcuts
+
+// Hide without display:none;
+// Used with first <h1> at home || front-page
+.visuallyhidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+	clip-path: inset(0px 0px 99.9% 99.9%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	border: 0;
+}
+
+// Turn an area into a link block
+// While maintaining interation with other links inside
+
+// add class .unit-link to the main <a>
+a.unit-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+// add class .unit-wrapper to the parent el <div>
+.unit-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.unit-wrapper > div {
+    position: relative;
+	z-index: 4;
+	pointer-events: none;
+}
+.unit-wrapper a:not(.unit-link) {
+    z-index: 4;
+    pointer-events: all;
+}
+
+
+
+
+// Utilities
+
+.box-shadow {
+	box-shadow: $box-shadow;
+}
+
+//Margin
+
+@mixin mt-30 {
+	margin-top: 1.875rem; //30px
+}
+.mt-30 {@include mt-30;}
+
+@mixin mb-30 {
+	margin-bottom: 1.875rem; //30px
+}
+.mb-30 {@include mb-30;}
+
+.strong {
+	font-weight: $font-weight-bold;
+}
+
+
+//BACKGROUND
+%bg-gradient-dark-alpha {
+	background: linear-gradient(180deg, rgba( $dark, .65 ), rgba( $dark, 0 ) ) repeat-x;
+}
+
+//BUTTONs
+
+//Add button style to direct child
+.child-btn,
+nav.navbar .navbar-nav .child-btn {
+	> * {
+		@extend .btn;
+	}
+}
+.child-btn-primary,
+nav.navbar .navbar-nav .child-btn-primary {
+	> * {
+		@extend .btn-primary;
+	}
+}
+.child-btn-secondary,
+nav.navbar .navbar-nav .child-btn-secondary {
+	> * {
+		@extend .btn-secondary;
+	}
+}

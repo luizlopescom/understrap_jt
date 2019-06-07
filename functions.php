@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $understrap_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
+	'/theme_custom.php',                    // Theme customizations.
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/widgets.php',                         // Register widget area.
 	'/enqueue.php',                         // Enqueue scripts and styles.
@@ -25,6 +26,17 @@ $understrap_includes = array(
 	'/woocommerce.php',                     // Load WooCommerce functions.
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
+	//EXTRAS
+	'/tinymce_styles.php',                  // TinyMCE Custom Styles.
+	'/customizer_custom.php',               // Custom Customizer additions.
+	'/security.php',                        // Security functions.
+	'/shortcodes.php',                      // Shortcodes.
+	'/divi.php',                            // Divi builder - plugin functions.
+//	'/breadcrumb.php',                      // Breadcrumb.
+	//META BOX + CPT
+//	'/plugin_meta_box.php',                 // Meta Box- plugin functions.
+//	'/custom_post_types_taxonomies.php'     // Custom Post Types and Custom Taxonomies.
+
 );
 
 foreach ( $understrap_includes as $file ) {

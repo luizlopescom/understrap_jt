@@ -2,5 +2,168 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
+//Reboot
+$font-size-base:              1rem; // Assumes the browser default, typically '16px'
+//$font-size-lg:                $font-size-base * 1.25;//20px
+//$font-size-sm:                $font-size-base * .875;//14px
 
-$primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+$small-font-size:             87.5%;//<small>
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+
+//Gradients bg are disabled by default
+//$enable-gradients:            false;
+
+//Reference
+
+//Media query MAIOR que...
+//@include media-breakpoint-up(xs) { ... }
+//@include media-breakpoint-up(sm) { ... }
+//@include media-breakpoint-up(md) { ... }
+//@include media-breakpoint-up(lg) { ... }
+//@include media-breakpoint-up(xl) { ... }
+
+//Media query MENOR que...
+//@include media-breakpoint-down(xs) { ... }
+//@include media-breakpoint-down(sm) { ... }
+//@include media-breakpoint-down(md) { ... }
+//@include media-breakpoint-down(lg) { ... }
+
+//Container
+//$container-max-widths: (
+//  sm: 540px,
+//  md: 720px,
+//  lg: 960px,
+//  xl: 1140px
+//);
+
+//COLORS
+
+	//Necessary set $white
+	$white:		#ffffff;
+
+$primary: #00327E;//JT Blue
+$secondary: #00CDAE;//JT Green
+
+$blue: $primary;
+$blue-dark: #141B63;//JT Dark blue
+$blue-light:#66DEFF;//Light blue for links on dark bg
+
+$bg-blue-light: #CDD6E5;//JT bg neutral-light blue
+
+
+$black: #000;
+$dark: $black;
+$green: $secondary;
+//$light: $white; ERROR!!!
+
+
+//Background
+$bg-white: #fff;
+$bg-light: #F5F5F5;
+$bg-secondary: $bg-light;
+
+
+//BODY
+$body-bg: $bg-secondary;
+$body-color: $dark;
+
+//Borders
+$border-color:#d1d1d1; 	//light-grey
+$border:1px solid $border-color;
+
+//box-Shadow
+$box-shadow: 0 2px 3px rgba(0,0,0,.16);
+
+//Elements
+$border-radius: .375rem;//6px
+
+//TYPE
+$font-family-sans-serif:		"Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+//$font-family-monospace:		SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+//$font-family-base:			$font-family-sans-serif;
+
+$font-weight-bold: 500;
+
+//HEADINGS
+//default
+$h1-font-size:                2.875rem;		//46px
+$h2-font-size:                2.625rem;		//42px
+$h3-font-size:                2.25rem;		//36px
+$h4-font-size:                1.75rem;		//28px
+$h5-font-size:                1.5rem;		//24px
+$h6-font-size:                .8125rem;		//14px
+
+//$headings-font-weight:        400;
+
+// HEADING OVERLINE
+// Over the titles
+$h1-overline-font-size:			1.3125rem;		//21px
+$h2-overline-font-size:			1.125rem;		//18px
+
+// DESCRIPTION
+// Below the titles
+$h1-description-font-size:			1.5rem;		//24px
+$h2-description-font-size:			1.3125rem;	//21px
+
+
+//custom
+
+//Links
+//$dropdown-link-color: $black;
+//$dropdown-link-hover-color: $black;
+//$dropdown-link-active-color $black;
+
+
+//BUTTONS - .btn + <button>
+$input-btn-padding-y:         .625rem;//10px
+$input-btn-padding-x:         1.5rem;//24px
+//$input-btn-font-family:       null !default;
+//$input-btn-font-size:         $font-size-base !default;
+//$input-btn-line-height:       $line-height-base !default;
+//$btn-border-radius:           $border-radius;
+$btn-font-weight:             600;
+
+//MENU
+$navbar-light-toggler-border-color: transparent;
+$input-btn-focus-color:       transparent;
+
+//Menu transparent - dark bg color
+//Set menu color of dark bg
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:          $white;
+
+.btn-primary,
+.btn-secondary {
+	text-transform: uppercase;
+}
+
+//HEADER
+//Navbar
+
+//Logo
+$navbar-padding-x:				1.5rem;//24px	
+
+//Menu nav .navbar .nav-link
+$navbar-nav-link-padding-x:		1.5rem;//24px
+
+
+
+
+
+//SHORTCUTS
+@mixin remove-ul-padding {
+	padding-left: 0;
+}
+
+@mixin remove-list-style {
+	list-style-type: none;
+}
+@mixin box-shadow-default {
+	box-shadow: $box-shadow;
+}
+@mixin border-default {
+	border: $border;
+}
