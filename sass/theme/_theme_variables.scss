@@ -81,7 +81,8 @@ $box-shadow: 0 2px 3px rgba(0,0,0,.16);
 $border-radius: .375rem;//6px
 
 //TYPE
-$font-family-sans-serif:		"Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+// Using original system fonts
+//$font-family-sans-serif:		"Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 //$font-family-monospace:		SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 //$font-family-base:			$font-family-sans-serif;
 
@@ -125,6 +126,9 @@ $input-btn-padding-x:         1.5rem;//24px
 //$input-btn-line-height:       $line-height-base !default;
 //$btn-border-radius:           $border-radius;
 $btn-font-weight:             600;
+
+//FORMS
+$input-btn-focus-width:       0rem;
 
 //MENU
 $navbar-light-toggler-border-color: transparent;

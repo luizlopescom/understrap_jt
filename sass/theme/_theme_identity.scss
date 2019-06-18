@@ -38,6 +38,7 @@ h5, .h5 {
 	}
 }
 
+
 h6, .h6 {
 	@extend h6, .h6;
 	font-weight: 400; //regular
@@ -45,6 +46,7 @@ h6, .h6 {
 	//Above titles
 	&.overline {
 		font-size: $h2-overline-font-size;//18px
+		font-weight: 500;
 		color: $gray-600;
 	}
 }
@@ -59,4 +61,29 @@ h5.description {
 h6.description {
 	font-size: $h2-description-font-size;//21px
 	line-height: 1.5em;
+}
+
+//BUTTONS
+
+// .btn-link is heavily used on this project
+.btn-link {
+	@extend .btn-link;
+	font-weight: 600;
+
+	&.btn {
+		//Only apply if class .btn is together
+		font-size: 1.125rem;//18px
+	}
+}
+.btn-link::after {
+	content: '\f105';
+	font-family: 'FontAwesome';
+	position: absolute;
+	margin-left: .5rem;
+	margin-top: .0625rem;//1px
+}
+
+//Change color on dark background
+.et_pb_bg_layout_dark .btn-link {
+	color: $blue-light;
 }
