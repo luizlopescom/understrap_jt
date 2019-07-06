@@ -1,3 +1,5 @@
+
+
 .wrapper {
 	padding: 30px 0;
 	//Change padding on HOME
@@ -18,7 +20,7 @@
 // Main Header
 
 $main-menu-height: 100px;
-$submenu-height:50px;
+$submenu-height:   50px;
 
 //Check if page template is 'transparent menu'
 body.page-template-empty-transparentmenu {
@@ -39,11 +41,12 @@ body.page-template-empty-transparentmenu {
 
 	//Dont add margin if is menu
 	.et-boc .et_builder_outer_content .et_builder_inner_content > .et_pb_section:first-child > *:not(.et_pb_fullwidth_menu) {
-		//Add 4% - is the divi margin
-		margin-top: calc( #{$main-menu-height} + 4%);
+		// Add divi .et_pb_section margin
+		// Curently the margin is 0
+		padding-top: calc( #{$main-menu-height} );
 	}
 	.et-boc .et_builder_outer_content .et_builder_inner_content > .et_pb_fullwidth_section.submenu {
-		//Add 4% - is the divi margin
+		// Add divi .et_pb_section margin
 		margin-top: $main-menu-height;
 		position: absolute;
 		right: 0;
@@ -51,8 +54,8 @@ body.page-template-empty-transparentmenu {
 		z-index: 19;
 	}
 	.et_pb_fullwidth_section.submenu + .et_pb_section {
-		//Add 4% - is the divi margin
-		padding-top: calc( #{$main-menu-height} + #{$submenu-height} + 4% );
+		// Add divi .et_pb_section margin
+		padding-top: calc( #{$main-menu-height} + #{$submenu-height} );
 	}
 
 		//submenu remove white background
@@ -171,39 +174,78 @@ body.page-template-empty-transparentmenu {
 
 //DIVI SUBMENU
 
-.et-boc .et_pb_fullwidth_menu {
-	height: $submenu-height;
+.et-boc .et_pb_fullwidth_section {
+	z-index: 1;
 
-	* {height: 100%;}
+	.et_pb_fullwidth_menu {
+		height: $submenu-height;
 
-	.fullwidth-menu-nav ul.fullwidth-menu {
-		
-	}
-	.fullwidth-menu li {
-		font-size: .875rem; //14px
-		padding-right: 2.5rem; //40px
+		* {height: 100%;}
 
-		//Set first-child as title
-		&:first-child {
-			margin-right:auto;
-			font-size: 1rem;//16px
-			font-weight: 600;//bold
+		.fullwidth-menu li {
+			font-size: .875rem; //14px
+			margin-right: 1.5rem; //40px
+			padding: 0 .5rem;
+			border-bottom: 2px solid transparent;
 
-			//Remove mouse event if active
-			&.current-menu-item {
-				pointer-events: none;
+			//Set first-child as title
+			&:first-child {
+				font-size: 1rem;//16px
+				font-weight: 600;//bold
+
+				//desktop
+				@include media-breakpoint-up(md) {
+					//add margin (push) only on desktop
+					margin-right:auto;
+				}
+
+				//Remove mouse event if active
+				&.current-menu-item {
+					pointer-events: none;
+				}
+
+				//mobile
+				@include media-breakpoint-down(md) {
+					//Hide first item on mobile
+					display:none;
+				}
+
 			}
 
-		}
+			//Add border to active menu item
+			&.current-menu-item:not(:first-child):not(.menu-item-object-custom) {
+				border-bottom: 2px solid $dark;
+				position: relative;
+				bottom: -1px;
+				padding-bottom: 2px;
 
-		a {
-			display: flex;
-			flex-direction:column;
-			justify-content:center;
+			//	&::after {
+			//		content: '';
+			//		width: 100%;
+			//		height: 1px;
+			//		background-color: $dark;
+			//		position: absolute;
+			//		right: 0;
+			//		bottom: -3px;
+			//	}
+			}
+
+			a {
+				display: flex;
+				flex-direction:column;
+				justify-content:center;
+				flex-wrap: wrap;
+
+				//registered mark
+				sup {
+					top: inherit;
+					line-height: 3rem;
+				}
+			}
 		}
-	}
-	.fullwidth-menu > li:last-child {
-		padding-right: 0;
+		.fullwidth-menu > li:last-child {
+			//padding-right: 0;
+		}
 	}
 }
 

@@ -1,12 +1,12 @@
 .overline {
-  display: inline-block;
-  background: #eee;
-  position: relative; }
+  display: block;
+  position: relative;
+  border-left: 5px solid #eee; }
 
 .description {
-  display: inline-block;
-  background: #ee9;
-  position: relative; }
+  display: block;
+  position: relative;
+  border-left: 5px solid #eee; }
 
 .overline::before {
   content: 'overline';
@@ -15,6 +15,7 @@
   font-size: 0.6rem;
   top: -.8rem;
   color: #000;
+  background: #eee;
   opacity: .5; }
 
 .description::before {
@@ -24,4 +25,5 @@
   font-size: 0.6rem;
   top: -.8rem;
   color: #000;
+  background: #eee;
   opacity: .5; }

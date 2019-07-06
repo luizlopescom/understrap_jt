@@ -2,14 +2,14 @@
 //@import "theme"; 
 
 .overline {
-	display: inline-block;
-	background: #eee;
+	display: block;
 	position: relative;
+	border-left: 5px solid #eee;
 }
 .description {
-	display: inline-block;
-	background: #ee9;
+	display: block;
 	position: relative;
+	border-left: 5px solid #eee;
 }
 
 .overline::before {
@@ -19,19 +19,9 @@
 	font-size: 0.6rem;
 	top: -.8rem;
 	color: #000;
+	background: #eee;
 	opacity: .5;
 }
-//.overline::after {
-//	content: 'overline-end';
-//	display: block;
-//	position: absolute;
-//	font-size: 0.6rem;
-//	bottom: -.8rem;
-//	color: #000;
-//	opacity: .5;
-//}
-
-
 .description::before {
 	content: 'description';
 	display: block;
@@ -39,5 +29,6 @@
 	font-size: 0.6rem;
 	top: -.8rem;
 	color: #000;
+	background: #eee;
 	opacity: .5;
 }

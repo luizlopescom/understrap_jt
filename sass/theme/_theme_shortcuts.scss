@@ -94,3 +94,39 @@ nav.navbar .navbar-nav .child-btn-secondary {
 		@extend .btn-secondary;
 	}
 }
+
+
+//IMAGES IMG
+.img-70pc img {
+	max-width: 70%;
+}
+
+
+
+//Add a layer to current div
+
+@mixin layer-dark {
+	&::after {
+		content: '';
+		background-color: $dark;
+		opacity: .25;
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.layer-dark {
+	@include layer-dark;
+}
+.layer-dark-mobile {
+	@include media-breakpoint-down(md) {
+		@include layer-dark;
+	}
+}
+.layer-dark-desktop {
+	@include media-breakpoint-up(md) {
+		@include layer-dark;
+	}
+}

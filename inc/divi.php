@@ -39,11 +39,11 @@ function divi_deregister_styles() {
 }
 add_action( 'wp_print_styles', 'divi_deregister_styles', 100 );
 
-//Remove Divi builder scripts
+//Remove Divi builder scripts on non Divi pages
 function deregister_script() {
-	//$is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
+	$is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
-	//if( !$is_page_builder_used ) {
+	if( !$is_page_builder_used ) {
 		wp_dequeue_script('et-builder-modules-global-functions-script');
 		wp_dequeue_script('google-maps-api');
 		wp_dequeue_script('divi-fitvids');
@@ -62,7 +62,7 @@ function deregister_script() {
 
 		wp_dequeue_script('et-core-common');
 
-	//}
+	}
 }
 add_action( 'wp_print_scripts', 'deregister_script', 100 );
 

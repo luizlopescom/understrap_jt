@@ -42,13 +42,13 @@ h5, .h5 {
 h6, .h6 {
 	@extend h6, .h6;
 	font-weight: 400; //regular
-
-	//Above titles
-	&.overline {
-		font-size: $h2-overline-font-size;//18px
-		font-weight: 500;
-		color: $gray-600;
-	}
+}
+//Above titles
+.overline,
+h6.overline {
+	font-size: $h2-overline-font-size;//18px
+	font-weight: 500;
+	color: $gray-600;
 }
 
 .feat-description,

@@ -62,12 +62,15 @@ $green: $secondary;
 
 //Background
 $bg-white: #fff;
-$bg-light: #F5F5F5;
+	
+	//bg-light is gray-100
+	$gray-100: #f5f5f5;
+	$bg-light: $gray-100;
 $bg-secondary: $bg-light;
 
 
 //BODY
-$body-bg: $bg-secondary;
+$body-bg: $white;
 $body-color: $dark;
 
 //Borders
@@ -101,13 +104,13 @@ $h6-font-size:                .8125rem;		//14px
 
 // HEADING OVERLINE
 // Over the titles
-$h1-overline-font-size:			1.3125rem;		//21px
-$h2-overline-font-size:			1.125rem;		//18px
+$h1-overline-font-size:			1.3125rem;	//21px
+$h2-overline-font-size:			1rem;		//16px
 
 // DESCRIPTION
 // Below the titles
-$h1-description-font-size:			1.5rem;		//24px
-$h2-description-font-size:			1.3125rem;	//21px
+$h1-description-font-size:		1.5rem;		//24px
+$h2-description-font-size:		1.3125rem;	//21px
 
 
 //custom

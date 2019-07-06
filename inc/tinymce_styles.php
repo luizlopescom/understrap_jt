@@ -57,12 +57,12 @@ function custom_formats_options( $settings ) {
 			'wrapper' => true, 
 		],
 		[ 
-			'title' => 'Descriçao', 
-			'selector' => 'h5,h6,p,span', 
-			'inline' => 'small', 
-			'classes' => 'description', 
-			'wrapper' => true, 
-			'exact' => '1' 
+			'title' => 'Descriçao',
+			'selector' => 'h5,h6,p,span',
+			'inline' => 'small',
+			'classes' => 'description',
+			'wrapper' => true,
+			'exact' => '1'
 		],
       
 

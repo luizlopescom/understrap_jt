@@ -24,35 +24,43 @@ function copyright_shortcode( $atts ){
 	return '©';
 }
 add_shortcode( 'copyright', 'copyright_shortcode' );
+add_shortcode( 'c', 'copyright_shortcode' );
 
 //Registered
 function registered_shortcode( $atts ){
 	return '®';
 }
 add_shortcode( 'registered', 'registered_shortcode' );
+add_shortcode( 'r', 'registered_shortcode' );
 
 //Trademark
 function trademark_shortcode( $atts ){
 	return '™';
 }
 add_shortcode( 'trademark', 'trademark_shortcode' );
+add_shortcode( 'tm', 'trademark_shortcode' );
 
 
 //Icons Shortcodes
-function icon_mail_shortcode() {
+function fa_user_plus_shortcode() {
+	return '<i class="fa fa-user-plus" aria-hidden="true"></i>';
+}
+add_shortcode('fa_user_plus', 'fa_user_plus_shortcode');
+
+function fa_mail_shortcode() {
 	return '<i class="fa fa-envelope-o" aria-hidden="true"></i>';
 }
-add_shortcode('icon_mail', 'icon_mail_shortcode');
+add_shortcode('fa_mail', 'fa_mail_shortcode');
 
-function icon_phone_shortcode() {
+function fa_phone_shortcode() {
 	return '<i class="fa fa-phone" aria-hidden="true"></i>';
 }
-add_shortcode('icon_phone', 'icon_phone_shortcode');
+add_shortcode('fa_phone', 'fa_phone_shortcode');
 
-function icon_pin_shortcode() {
+function fa_pin_shortcode() {
 	return '<i class="fa fa-map-marker" aria-hidden="true"></i>';
 }
-add_shortcode('icon_map', 'icon_pin_shortcode');
+add_shortcode('fa_map', 'fa_pin_shortcode');
 
 
 //Customizer info
