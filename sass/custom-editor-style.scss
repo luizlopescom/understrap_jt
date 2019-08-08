@@ -5,11 +5,13 @@
 	display: block;
 	position: relative;
 	border-left: 5px solid #eee;
+	padding-left: 5px;
 }
-.description {
+.description:not(#tinymce) {
 	display: block;
 	position: relative;
 	border-left: 5px solid #eee;
+	padding-left: 5px;
 }
 
 .overline::before {
@@ -18,17 +20,21 @@
 	position: absolute;
 	font-size: 0.6rem;
 	top: -.8rem;
-	color: #000;
+	color: #666;
 	background: #eee;
-	opacity: .5;
+	border-left: 5px solid #eee;
+	border-right: 5px solid #eee;
+	margin-left: -10px;
 }
-.description::before {
+.description:not(#tinymce)::before {
 	content: 'description';
 	display: block;
 	position: absolute;
 	font-size: 0.6rem;
 	top: -.8rem;
-	color: #000;
+	color: #666;
 	background: #eee;
-	opacity: .5;
+	border-left: 5px solid #eee;
+	border-right: 5px solid #eee;
+	margin-left: -10px;
 }

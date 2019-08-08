@@ -50,6 +50,10 @@ a.unit-link {
 .box-shadow {
 	box-shadow: $box-shadow;
 }
+.img-shadow img,
+.img-shadow svg {
+	filter:drop-shadow(0 0 5px rgba(0,0,0,.5));
+}
 
 //Margin
 
@@ -72,6 +76,11 @@ a.unit-link {
 %bg-gradient-dark-alpha {
 	background: linear-gradient(180deg, rgba( $dark, .65 ), rgba( $dark, 0 ) ) repeat-x;
 }
+.bg-green 		{background-color: $bg-green;}
+.bg-yellow 		{background-color: $bg-yellow;}
+.bg-blue-alt 	{background-color: $bg-blue-alt;}
+.bg-lilac		{background-color: $lilac;}
+
 
 //BUTTONs
 
@@ -129,4 +138,10 @@ nav.navbar .navbar-nav .child-btn-secondary {
 	@include media-breakpoint-up(md) {
 		@include layer-dark;
 	}
+}
+
+//FLEX
+.flex-around {
+	display: flex;
+	justify-content:space-around;
 }

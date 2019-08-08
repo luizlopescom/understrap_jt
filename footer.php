@@ -113,13 +113,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-12">
 
-				<footer class="site-footer" id="colophon">
+				<footer class="site-footer row" id="colophon">
 
-					<div class="site-info">
+					<div class="site-info col-10">
 
 						<?php echo do_shortcode( get_theme_mod( 'footer_credits') ); ?>
 
 					</div><!-- .site-info -->
+
+					<div class="developer col-2 text-right">
+						<a href="https://www.pantanaldigital.com.br" target="_blank" title="desenvolvido por Pantanal Digital">
+							<img style="height:100%;max-height: 28px; width:auto" src="<?php echo get_template_directory_uri(); ?>/img/pantanal-digital-logo.svg">
+						</a>
+					</div>
 
 				</footer><!-- #colophon -->
 

@@ -8,6 +8,11 @@ jQuery(document).ready(function( $ ) {
 		});
 	
 
+	//Toggle style on menu open
+	$('button.navbar-toggler').click(function() {
+		$('nav.navbar-transparent').toggleClass('expanded');
+	});
+
 	//Página de Consultores - redireciona para a página ao mudar o select option
 	//$('#state').on('change', function () {
 	//	var url = $(this).val(); // get selected value

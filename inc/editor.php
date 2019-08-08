@@ -17,7 +17,7 @@ add_action( 'admin_init', 'understrap_wpdocs_theme_add_editor_styles' );
 
 if ( ! function_exists( 'understrap_wpdocs_theme_add_editor_styles' ) ) {
 	function understrap_wpdocs_theme_add_editor_styles() {
-		add_editor_style( 'css/custom-editor-style.css' );
+		add_editor_style( get_template_directory_uri().'/css/custom-editor-style.css?ver=1' );
 	}
 }
 

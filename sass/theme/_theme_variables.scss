@@ -4,6 +4,7 @@
 
 //Reboot
 $font-size-base:              1rem; // Assumes the browser default, typically '16px'
+
 //$font-size-lg:                $font-size-base * 1.25;//20px
 //$font-size-sm:                $font-size-base * .875;//14px
 
@@ -57,6 +58,7 @@ $bg-blue-light: #CDD6E5;//JT bg neutral-light blue
 $black: #000;
 $dark: $black;
 $green: $secondary;
+$lilac: #a996f1;
 //$light: $white; ERROR!!!
 
 
@@ -68,6 +70,10 @@ $bg-white: #fff;
 	$bg-light: $gray-100;
 $bg-secondary: $bg-light;
 
+$bg-green:#00CDAE;
+$bg-yellow:#FCF3C9;
+$bg-blue-alt:#b6e1fd;
+//$bg-pink:;
 
 //BODY
 $body-bg: $white;
@@ -157,6 +163,9 @@ $navbar-padding-x:				1.5rem;//24px
 $navbar-nav-link-padding-x:		1.5rem;//24px
 
 
+//CARDS
+$card-border-width:				0;//remove border
+//$card-border-radius:			0;//remove border-radius
 
 
 

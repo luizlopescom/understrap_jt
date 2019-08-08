@@ -38,6 +38,11 @@ $divi-et-pb-section-padding:3rem;
 	padding: $divi-et-pb-section-padding 15px;//80px
 }
 
+.et_pb_row_6col .et_pb_text_inner {
+	word-wrap:normal;
+    //overflow-wrap: normal;
+}
+
 
 //MENU Module
 
@@ -68,6 +73,25 @@ $divi-et-pb-section-padding:3rem;
 		}
 	}
 
+}
+
+// Adjust padding on mobile
+//mobile
+@include media-breakpoint-down(md) {
+	.et_pb_row {
+
+		.et_pb_column {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+
+			&:first-child {
+				padding-top: 3rem;
+			}
+			&:last-child {
+				padding-bottom: 3rem;
+			}
+		}
+	}
 }
 
 

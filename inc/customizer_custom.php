@@ -201,6 +201,75 @@ function custom_theme_customize_register($wp_customize) {
 	'type' => 'text'
 	) );
 
+	//SEÇÃO - JOGO DA TRANSFORMACAO
+	//Certificações
+	$wp_customize->add_section( 'custom_jogodatransformacao_layout_options', array(
+		'title'       => __( 'Jogo da Transformação', 'understrap' ),
+		'capability'  => 'edit_theme_options',
+		'description' => __( 'Informações do Jogo.', 'understrap' ),
+		'priority'    => 160,
+	) );
+
+	//SOLO
+	$wp_customize->add_setting( 'jt_solo_description', array(
+	'default' => '',
+	'capability' => 'edit_theme_options'
+	) );
+
+	$wp_customize->add_control( 'jt_solo_description', array(
+	'label' => 'Descrição da certificação da Versão Solo:',
+	'section' => 'custom_jogodatransformacao_layout_options',
+	'type' => 'text'
+	) );
+
+	//ADV
+	$wp_customize->add_setting( 'jt_adv_description', array(
+	'default' => '',
+	'capability' => 'edit_theme_options'
+	) );
+
+	$wp_customize->add_control( 'jt_adv_description', array(
+	'label' => 'Descrição da certificação da Versão Avançada:',
+	'section' => 'custom_jogodatransformacao_layout_options',
+	'type' => 'text'
+	) );
+
+	//GRUPO
+	$wp_customize->add_setting( 'jt_grupo_description', array(
+	'default' => '',
+	'capability' => 'edit_theme_options'
+	) );
+
+	$wp_customize->add_control( 'jt_grupo_description', array(
+	'label' => 'Descrição da certificação da Versão de Grupo:',
+	'section' => 'custom_jogodatransformacao_layout_options',
+	'type' => 'text'
+	) );
+
+	//FFC
+	$wp_customize->add_setting( 'ffc_description', array(
+	'default' => '',
+	'capability' => 'edit_theme_options'
+	) );
+
+	$wp_customize->add_control( 'ffc_description', array(
+	'label' => 'Descrição da certificação do FFC:',
+	'section' => 'custom_jogodatransformacao_layout_options',
+	'type' => 'text'
+	) );
+
+	//FCP
+	$wp_customize->add_setting( 'fcp_description', array(
+	'default' => '',
+	'capability' => 'edit_theme_options'
+	) );
+
+	$wp_customize->add_control( 'fcp_description', array(
+	'label' => 'Descrição da certificação do FCP:',
+	'section' => 'custom_jogodatransformacao_layout_options',
+	'type' => 'text'
+	) );
+
 }
 
 add_action( 'customize_register', 'custom_theme_customize_register' );

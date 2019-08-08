@@ -32,6 +32,8 @@ $understrap_includes = array(
 	'/security.php',                        // Security functions.
 	'/shortcodes.php',                      // Shortcodes.
 	'/divi.php',                            // Divi builder - plugin functions.
+	'/taygeta-facilitadores.php',           // Funções para os Facilitadores Credenciados do Jogo da Transf.
+	'/theeventscalendar.php',               // Funções para o plugin The Events Calendar
 //	'/breadcrumb.php',                      // Breadcrumb.
 	//META BOX + CPT
 //	'/plugin_meta_box.php',                 // Meta Box- plugin functions.
